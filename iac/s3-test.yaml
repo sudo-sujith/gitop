@@ -9,15 +9,8 @@ spec:
     acl: private
     versioning:
       enabled: true
-    serverSideEncryption:
-      rules:
-        - applyServerSideEncryptionByDefault:
-            sseAlgorithm: AES256
     tags:
       Environment: test
       Purpose: crossplane-demo
   providerConfigRef:
     name: default
-  writeConnectionSecretsToRef:
-    name: test-s3-bucket-connection
-    namespace: gitops
