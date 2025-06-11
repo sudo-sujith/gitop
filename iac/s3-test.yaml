@@ -1,1 +1,23 @@
-
+apiVersion: s3.aws.crossplane.io/v1alpha1
+kind: Bucket
+metadata:
+  name: test-s3-bucket-112
+  namespace: gitops
+spec:
+  forProvider:
+    region: us-east-1
+    acl: private
+    versioning:
+      enabled: true
+    serverSideEncryption:
+      rules:
+        - applyServerSideEncryptionByDefault:
+            sseAlgorithm: AES256
+    tags:
+      Environment: test
+      Purpose: crossplane-demo
+  providerConfigRef:
+    name: default
+  writeConnectionSecretsToRef:
+    name: test-s3-bucket-connection
+    namespace: gitops
