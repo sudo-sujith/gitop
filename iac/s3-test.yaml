@@ -6,9 +6,6 @@ metadata:
 spec:
   forProvider:
     region: us-east-1
-    acl: private
-    versioning:
-      enabled: true
     tags:
       Environment: test
       Purpose: crossplane-demo
