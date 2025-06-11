@@ -1,4 +1,4 @@
-apiVersion: s3.aws.crossplane.io/v1alpha1
+apiVersion: s3.aws.upbound.io/v1beta2
 kind: Bucket
 metadata:
   name: test-s3-bucket-112
