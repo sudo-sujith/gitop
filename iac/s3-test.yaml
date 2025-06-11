@@ -4,7 +4,7 @@ metadata:
   name: sp-yutewruiewtry
   namespace: gitops
 spec:
-  forProvider:
+  forProvide:
     region: us-east-2
   providerConfigRef:
     name: default
