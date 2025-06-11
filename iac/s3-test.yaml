@@ -1,13 +1,13 @@
-apiVersion: s3.aws.upbound.io/v1beta2
-kind: Bucket
-metadata:
-  name: test-s3-bucket-112
-  namespace: gitops
-spec:
-  forProvider:
-    region: us-east-1
-    tags:
-      Environment: test
-      Purpose: crossplane-demo
-  providerConfigRef:
-    name: default
+#apiVersion: s3.aws.upbound.io/v1beta2
+#kind: Bucket
+#metadata:
+#  name: test-s3-bucket-112
+#  namespace: gitops
+#spec:
+#  forProvider:
+#    region: us-east-1
+#    tags:
+#      Environment: test
+#      Purpose: crossplane-demo
+#  providerConfigRef:
+#    name: default
