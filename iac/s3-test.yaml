@@ -4,7 +4,7 @@ metadata:
 #  name: test-s3-bucket-112
   namespace: gitops
 spec:
-iA:wq  forProvider:
+  forProvider:
     region: us-east-1
     tags:
       Environment: test
