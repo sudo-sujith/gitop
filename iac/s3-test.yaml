@@ -8,4 +8,3 @@ spec:
     region: us-east-2
   providerConfigRef:
     name: default
-EOF
